@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Bootstrap & jQuery (Include in <head> or before </body>) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+	<title>Static Page</title>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-white" id="home" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Categories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">About</a>
+      </li>
+    </ul>
+
+    <!-- Login and Sign-up Buttons -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="btn btn-outline-light" href="#" id="login-btn">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-light ml-2" href="#" id="signup-btn">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Image Background Section Under Navbar -->
+<div class="image-background" style="background-image: url('./images/banner1.png'); ">
+  <div class="d-flex justify-content-center align-items-center" style="height: 100%; color: white;">
+	    <form class="d-flex position-absolute search-form" action="#" method="GET">
+	    <input class="form-control mr-2" type="search" placeholder="Search Books Here" aria-label="Search">
+	    <button class="btn btn-light" type="submit">Search</button>
+	  	</form>
+  </div>
+</div>
+
+
+<!-- About Books Section -->
+<section class="about-books text-center py-5">
+  <div class="container" id="introduction">
+    <h2 class="mb-4">Introduction to Books</h2>
+    <p class="lead">
+      Books open the doors to imagination, knowledge, and endless possibilities. Whether you love fiction, non-fiction, fantasy, or biographies, there’s always a book that can inspire, educate, and entertain. 
+    </p>
+    <p>
+      Our collection features a variety of genres, from picture books for young readers to thought-provoking non-fiction for curious minds. Dive into our categories and discover your next great read!
+    </p>
+  </div>
+</section>
+
+
+
+<!-- BOOKS CATEGORIES-->
+<div class="perfume-collection" id="categories-section"> Books Categories </div>
+<div class="card-group" id="categories">
+  <!-- Category 1 -->
+  <div class="card">
+    <img class="card-img-top" src="./images/cat1.png" alt="Picture Books">
+    <div class="card-body">
+      <h5 class="card-title">Picture Books</h5>
+      <p class="card-text">Step into the magical world of the Enchanted Woods, where the animals talk, trees whisper secrets, and adventure awaits at every turn!
+      Follow Luna the curious fox, Oliver the wise owl, and Benny the playful bear as they embark on a journey to uncover the forest’s greatest mystery.</p>
+      <a href="#" class="btn browse-button">Browse Books</a>
+    </div>
+  </div>
+  
+  <!-- Category 2 -->
+  <div class="card">
+    <img class="card-img-top" src="./images/cat2.png" alt="Early Readers">
+    <div class="card-body">
+      <h5 class="card-title">Early Readers</h5>
+      <p class="card-text">Join Emi on a magical journey to the seaside! 🏖️🌊  
+        Emi, a curious and adventurous girl, discovers hidden treasures, meets new ocean friends, and learns the importance of protecting nature.  
+        Along the way, she finds courage, friendship, and the beauty of the world around her.</p>
+      <a href="#" class="btn browse-button">Browse Books</a>
+    </div>
+  </div>
+  
+  <!-- Category 3 -->
+  <div class="card">
+    <img class="card-img-top" src="./images/cat3.png" alt="Middle Grade">
+    <div class="card-body">
+      <h5 class="card-title">Middle Grade</h5>
+      <p class="card-text">Rosie isn’t just any friend—she’s special in ways that only her best friend can understand. Through adventures in the garden, tea parties under the old oak tree, and whispered secrets in the moonlight, My Friend Rosie captures the beauty of childhood bonds and the importance of believing in something greater than yourself.</p>
+      <a href="#" class="btn browse-button">Browse Books</a>
+    </div>
+  </div>
+  
+  <!-- Category 4 -->
+  <div class="card">
+    <img class="card-img-top" src="./images/cat4.png" alt="Fantasy">
+    <div class="card-body">
+      <h5 class="card-title">Fantasy</h5>
+      <p class="card-text">Hanover, a wise and protective old shepherd, has spent his life watching over the farm. But when Tyke, a mischievous and curious little pup, arrives, their world is turned upside down. Through playful chases, lessons in bravery, and a shared love for adventure, the two form an unforgettable friendship that proves that family isn't just about where you come from.</p>
+      <a href="#" class="btn browse-button">Browse Books</a>
+    </div>
+  </div>
+  
+  <!-- Category 5 -->
+  <div class="card">
+    <img class="card-img-top" src="./images/cat5.png" alt="Historical Fiction">
+    <div class="card-body">
+      <h5 class="card-title">Historical Fiction</h5>
+      <p class="card-text">When a mysterious old map is discovered in a dusty attic, a group of daring young explorers embarks on a thrilling journey across the high seas. Facing treacherous waters, secret tunnels, and legendary pirate ghosts, they must decode ancient clues and outsmart rival treasure hunters to uncover the island’s long-lost riches.</p>
+      <a href="#" class="btn browse-button">Browse</a>
+    </div>
+  </div>
+</div>
+
+<!--REVIEW SECTION-->
+<section id="resources" class="reviews-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4"><strong>What The Kids Are Saying</strong></h2>
+    <div class="row">
+      <!-- Review 1 -->
+      <div class="col-md-4">
+        <div class="review-card-1">
+          <div class="review-content">
+            <p class="review-text">"This book is amazing! I loved the magical forest and the talking animals. It was the best adventure!"</p>
+          </div>
+          <div class="review-author">
+            <h5>- Emma, 8 years old</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Review 2 -->
+      <div class="col-md-4">
+        <div class="review-card-2">
+          <div class="review-content">
+            <p class="review-text">"I learned so much from this book! The pictures were so pretty, and I can’t wait to read more!"</p>
+          </div>
+          <div class="review-author">
+            <h5>- Noah, 7 years old</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Review 3 -->
+      <div class="col-md-4">
+        <div class="review-car-3">
+          <div class="review-content">
+            <p class="review-text">"My favorite part was when the fox and owl teamed up to solve the mystery. It was so fun!"</p>
+          </div>
+          <div class="review-author">
+            <h5>- Olivia, 9 years old</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BOOKS ABOUT SECTION -->
+<section class="about-books text-center py-5">
+  <div class="container">
+    <div class="row">
+      <!-- About Books -->
+      <div class="col-md-4">
+        <h3 class="my-4"><strong>About Books</strong></h3>
+        <p>
+          Books provide a gateway to endless imagination and education. From fictional adventures to educational treasures, every book holds the potential to enrich minds and transport readers into new realms.
+        </p>
+      </div>
+
+      <!-- Our Mission -->
+      <div class="col-md-4">
+        <h3 class="my-4" id="mission"><strong>Our Mission</strong></h3>
+        <p>
+          At "Let's Read with me", we are committed to sparking curiosity and fostering a love for reading. Our mission is to provide diverse books for readers of all ages, promoting learning, empathy, and creativity.
+        </p>
+      </div>
+
+      <!-- Contact Us Form -->
+      <div class="col-md-4">
+        <h3 class="my-4" id="contact"><strong>Contact Us</strong></h3>
+        <p>
+          We’d love to hear from you! Feel free to reach out using the form below.
+        </p>
+        
+        <!-- Contact Form -->
+        <form action="your_form_processing_url" method="POST" class="p-4 border rounded shadow-sm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn browse-button">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-background {
+  background-size: cover;
+  background-position: center;
+  height: 700px; 
+  background-size: cover; 
+  background-position: center;
+}
+
+.image-background h1 {
+  color: white;
+  text-align: center;
+}
+
+.image-background form input[type="search"] {
+  width: 250px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+}
+
+.image-background form button {
+  border-radius: 25px;
+  background-color: #ffc000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+.search-form {
+  bottom: 140px;
+  left: 10%;
+  transform: : translateX(-50%);
+  gap: 7px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #7570D8 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Allow the search bar to be positioned absolutely */
+  height: 70px;
+}
+
+/* Center the Luxe Belle brand */
+.navbar-brand {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  position: absolute; /* Make Luxe Belle position absolute */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+}
+
+#signup-btn {
+  background-color: #ffc000;
+  color: white;
+}
+
+#login-btn {
+  color: #ffc000;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  text-align: center;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: gold !important;
+}
+
+.btn-outline-light:hover {
+  color: gold !important;
+  border-color: gold !important;
+}
+
+
+/* Perfume Collection Header */
+.perfume-collection {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 50px 0; /* Add spacing around the title */
+  color: black;
+}
+
+/* Card Layout */
+.card-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  margin: 20px;
+}
+
+/* Card Adjustments */
+.card {
+  width: 18rem; /* Set card width */
+}
+
+.card-img-top { /* Set a max height for images */
+  object-fit: cover; /* Ensure images fill the area nicely */
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.875rem;
+}
+
+/* Adjustments for the small text */
+.card-text small.text-muted {
+  font-size: 0.75rem;
+}
+
+.about-books {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.about-books h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.about-books p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.browse-button {
+  background-color: #7570D8;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.browse-button:hover {
+  background-color: #5a56b1;
+  color: #fff;
+}
+
+#resources  {
+  background-image: url('./images/1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  height: 500px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2%;
+
+
+.reviews-section h2 {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.review-card-1, .review-card-2, .review-car-3 {
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card-1:hover, .review-card-2:hover, .review-car-3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review-content {
+  color: white;
+}
+
+.review-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.review-author h5 {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+.review-card-1 {
+  background-color: #F089D0;
+}
+
+.review-card-2 {
+  background-color: #FFD966;
+}
+
+.review-car-3 {
+  background-color: #4caf50; 
+}
+

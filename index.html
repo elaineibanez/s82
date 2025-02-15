@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Roboto:wght@800&display=swap" rel="stylesheet">
 	<!-- Bootstrap & jQuery (Include in <head> or before </body>) -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
@@ -51,16 +52,12 @@
 <!-- Image Background Section Under Navbar -->
 <div class="image-background" style="background-image: url('./images/banner1.png'); ">
   <div class="d-flex justify-content-center align-items-center" style="height: 100%; color: white;">
-	    <form class="d-flex position-absolute search-form" action="#" method="GET">
-	    <input class="form-control mr-2" type="search" placeholder="Search Books Here" aria-label="Search">
-	    <button class="btn btn-light" type="submit">Search</button>
-	  	</form>
   </div>
 </div>
 
 
 <!-- About Books Section -->
-<section class="about-books text-center py-5">
+<section class="introduction text-center py-5">
   <div class="container" id="introduction">
     <h2 class="mb-4">Introduction to Books</h2>
     <p class="lead">
@@ -75,10 +72,12 @@
 
 
 <!-- BOOKS CATEGORIES-->
-<div class="perfume-collection" id="categories-section"> Books Categories </div>
+<div id="categories-section"> 
+  <h2>Books Categories <h2>
+  </div>
 <div class="card-group" id="categories">
   <!-- Category 1 -->
-  <div class="card">
+  <div id="featured" class="card">
     <img class="card-img-top" src="./images/cat1.png" alt="Picture Books">
     <div class="card-body">
       <h5 class="card-title">Picture Books</h5>
@@ -134,7 +133,7 @@
 <!--REVIEW SECTION-->
 <section id="resources" class="reviews-section py-5">
   <div class="container">
-    <h2 class="text-center mb-4"><strong>What The Kids Are Saying</strong></h2>
+    <h2 class="text-center mb-4" style="font-size: 50px; font-weight: bold; margin-top: 20px;">What The Kids Are Saying</h2>
     <div class="row">
       <!-- Review 1 -->
       <div class="col-md-4">
@@ -158,6 +157,9 @@
           </div>
         </div>
       </div>
+
+      <div class="w-100"></div>
+
       <!-- Review 3 -->
       <div class="col-md-4">
         <div class="review-car-3">
@@ -169,6 +171,17 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="review-car-4">
+          <div class="review-content">
+            <p class="review-text">"My favorite part was when the fox and owl teamed up to solve the mystery. It was so fun!"</p>
+          </div>
+          <div class="review-author">
+            <h5>- Elizabeth, 6 years old</h5>
+          </div>
+        </div>
+      </div>      
     </div>
   </div>
 </section>
@@ -180,7 +193,7 @@
     <div class="row">
       <!-- About Books -->
       <div class="col-md-4">
-        <h3 class="my-4"><strong>About Books</strong></h3>
+        <h3 class="my-4" id="about"><strong>About Books</strong></h3>
         <p>
           Books provide a gateway to endless imagination and education. From fictional adventures to educational treasures, every book holds the potential to enrich minds and transport readers into new realms.
         </p>

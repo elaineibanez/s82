@@ -8,7 +8,7 @@
 .image-background {
   background-size: cover;
   background-position: center;
-  height: 700px; 
+  height: 600px; 
   background-size: cover; 
   background-position: center;
 }
@@ -94,15 +94,6 @@
 }
 
 
-/* Perfume Collection Header */
-.perfume-collection {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 50px 0; /* Add spacing around the title */
-  color: black;
-}
 
 /* Card Layout */
 .card-group {
@@ -114,7 +105,10 @@
 
 /* Card Adjustments */
 .card {
-  width: 18rem; /* Set card width */
+  width: 18rem;
+  border-radius: 30px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top { /* Set a max height for images */
@@ -126,8 +120,9 @@
 }
 
 .card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 1.50rem;
+  font-weight: bolder;
+  font-family: "Dekko", serif;
 }
 
 .card-text {
@@ -140,20 +135,35 @@
 }
 
 .about-books {
-  background-color: #f8f9fa;
-  padding: 60px 0;
+  background: url('./images/2.png') no-repeat center center/cover;
+  color: black; /* Adjust text color if needed */
+  padding: 10rem 0;
 }
 
-.about-books h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+.about-books h3{
+  font-family: "Dekko", serif;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
-.about-books p {
+.introduction h2 {
+  font-family: "Dekko", serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.introduction p {
   font-size: 1.1rem;
   color: #555;
-  max-width: 800px;
   margin: 0 auto;
+}
+
+#categories-section h2{
+  font-family: "Dekko", serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 2%;
 }
 
 .browse-button {
@@ -177,17 +187,16 @@
   background-repeat: no-repeat;
   color: black;
   height: 500px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Dekko", serif;
   margin-top: 2%;
 
 
 .reviews-section h2 {
-  color: black;
-  font-size: 2rem;
-  font-weight: bold;
+  font-family: "Dekko", serif;
+  margin-bottom: 100px;
 }
 
-.review-card-1, .review-card-2, .review-car-3 {
+.review-card-1, .review-card-2, .review-car-3, .review-car-4 {
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
@@ -195,7 +204,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.review-card-1:hover, .review-card-2:hover, .review-car-3:hover {
+.review-card-1:hover, .review-card-2:hover, .review-car-3:hover, .review-car-4:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
@@ -229,3 +238,6 @@
   background-color: #4caf50; 
 }
 
+.review-car-4 {
+  background-color: #7570D8; 
+}
